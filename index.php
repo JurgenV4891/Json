@@ -7,7 +7,7 @@ if (!empty($_POST)) {
     $commande = array('catalogue' => $_POST['année'], '1999' => $_POST['1999'], '2001' => $_POST['2001'], '2003' => $_POST['2003'], '2005' => $_POST['2005'], '2007' => $_POST['2007'], '2009' => $_POST['2009']);
     $options = json_encode($commande);  
   
-    $message = "Merci d'avoir louer votre Formule 1 chez RentNBurnUrCash " . $_POST['catalogue'] . ', ';
+    $message = "Merci d'avoir loué votre Formule 1 chez RentNBurnUrCash " . $_POST['catalogue'] . ', ';
     $options = json_decode($options);
 
     foreach ($options as $option) {
